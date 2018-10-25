@@ -16,7 +16,7 @@ import java.util.UUID;
 
 @RestController
 @Api(value = "users", description = "Users API")
-public class testController {
+public class userController {
 
 
 

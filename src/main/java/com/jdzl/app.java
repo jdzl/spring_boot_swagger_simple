@@ -1,4 +1,4 @@
-package com.infotech.swagger;
+package com.jdzl;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

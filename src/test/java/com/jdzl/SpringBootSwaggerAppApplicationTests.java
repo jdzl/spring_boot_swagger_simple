@@ -1,4 +1,4 @@
-package com.infotech.swagger;
+package com.jdzl;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

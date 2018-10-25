@@ -1,7 +1,5 @@
-package com.infotech.swagger.models;
+package com.jdzl.models;
 
-import java.net.PortUnreachableException;
-import java.sql.Array;
 import java.util.Arrays;
 import java.util.List;
 import java.util.UUID;

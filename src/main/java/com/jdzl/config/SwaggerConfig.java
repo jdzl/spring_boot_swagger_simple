@@ -1,4 +1,4 @@
-package com.infotech.swagger.config;
+package com.jdzl.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

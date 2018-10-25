@@ -1,4 +1,4 @@
-package com.infotech.swagger.models;
+package com.jdzl.models;
 
 import java.util.UUID;
 
