@@ -1,25 +1,23 @@
-package com.infotech.swagger.controller;
+package com.jdzl.controllers;
 
-import com.infotech.swagger.models.DataDummy;
-import com.infotech.swagger.models.Product;
+import com.jdzl.models.Product;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
-import org.springframework.http.HttpRequest;
-import org.springframework.http.ResponseEntity;
+
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Arrays;
-import java.util.List;
 import java.util.UUID;
+
 
 @RestController
 @Api(value = "users", description = "Users API")
-public class HelloWorldController {
+public class testController {
+
 
 
 	@RequestMapping(value="/users/{id}/products",method = RequestMethod.GET, produces = "application/json")
@@ -34,14 +32,8 @@ public class HelloWorldController {
 			@ApiResponse(code = 404, message = "The resource you were trying to reach is not found")
 	})
 	public Product check(@PathVariable String id)
-	{	Product res = null;
-		try{
-			 res=   new Product(UUID.randomUUID() , id,"8733400912","12/05/2018",8600000);
-
-
-		}catch (Exception e){		}
-
-		return res;
+	{
+		return new Product(UUID.randomUUID() , id,"8733400912","12/05/2018",8600000);
 
 	}
 
@@ -52,14 +44,6 @@ public class HelloWorldController {
 
 
 
-	@RequestMapping(value = "/convert/{message}",method = RequestMethod.GET)
-	public String cv(@PathVariable String message) {
-		return  message.replace('a','4')
-				.replace('e','3')
-				.replace('i','1')
-				.replace('o','0');
 
-
-	}
 
 }
